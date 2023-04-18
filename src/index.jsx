@@ -12,10 +12,22 @@ import Error from './components/Error'
 import Footer from './components/Footer'
 
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  * {
+      font-family: 'Montserrat', sans-serif;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+  }
+`
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
         <Switch>
           <Route exact path="/">
