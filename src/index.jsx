@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 // Importation des éléments du dossier "pages"
 import Home from './pages/Home'
 import Propos from './pages/A-Propos'
+import Logement from './pages/Logement'
 
 // Importation des éléments du dossier "components"
 import Header from  './components/Header'
@@ -18,6 +19,9 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/logement">
+            <Logement />
           </Route>
           <Route path="/propos">
             <Propos />
