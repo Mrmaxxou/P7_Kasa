@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Background from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg'
 import colors from '../../utils/style/colors'
-
+import Card from '../../components/Card'
 
 
 
@@ -9,15 +9,16 @@ import colors from '../../utils/style/colors'
 // ----------------------------------------------------------------- //
 
 const StyledHome = styled.section`
-  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 70px 0px 30px 0px;
+  margin: 70px 100px 30px 100px;
 `
 
 const StyledCardh1 = styled.div`
 position: relative;  
 background: url(${Background}) center no-repeat;
+background-size: cover;
 border-radius: 30px;
 `
 
@@ -29,10 +30,11 @@ background-color: rgba(0, 0, 0, 0.3);
 height: 100%;
 width: 100%;
 border-radius: 30px;
-
 `
 const StyledTexth1 = styled.h1`
   position: relative;
+  display: flex;
+  justify-content: center;
   z-index: 1;
   margin: 0;
   padding: 70px 260px 70px 260px;
@@ -48,7 +50,7 @@ function Home(){
       <StyledTexth1>Chez vous, partout et ailleurs</StyledTexth1>
     </StyledCardh1>
     <div>
-
+      <Card/>
     </div>
 
   </StyledHome>)
