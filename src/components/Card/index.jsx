@@ -1,8 +1,12 @@
+//import colors from '../../utils/style/colors'
+
+
+
+
 function Card({title, picture}){
     return (
         <div>
-            <img src={picture} alt={title}/>
-            <h3>{title}</h3>
+            <h3>Titre de la location</h3>
         </div>
     )
 }
