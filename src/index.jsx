@@ -1,16 +1,31 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './pages/Home'
 
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+// Importation des éléments du dossier "pages"
+import Home from './pages/Home'
+import Propos from './pages/A-Propos'
+
+// Importation des éléments du dossier "components"
+import Header from  './components/Header'
+import Error from './components/Error'
+
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-        <Route path="/">
-          <Home />
-        </Route>
-        
+      <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/propos">
+            <Propos />
+          </Route>
+          <Route>
+            <Error />
+          </Route>
+        </Switch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,9 +1,12 @@
-function Error() {
+import { Link } from 'react-router-dom'
+
+function Header() {
     return (
-        <div>
-            <h1> Oups! La page que vous demandez n'existe pas.</h1>
-        </div>
+        <nav>
+            <Link to="/">Accueil</Link>
+            <Link to="/Propos">A Propos</Link>
+        </nav>
     )
 }
 
-export default Error;
+export default Header
