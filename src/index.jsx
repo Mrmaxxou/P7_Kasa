@@ -9,6 +9,7 @@ import Logement from './pages/Logement'
 // Importation des éléments du dossier "components"
 import Header from  './components/Header'
 import Error from './components/Error'
+import Footer from './components/Footer'
 
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -30,6 +31,7 @@ ReactDOM.render(
             <Error />
           </Route>
         </Switch>
+        <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
