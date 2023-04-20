@@ -46,6 +46,7 @@ const StyledTexth1 = styled.h1`
 
 const StyledBannerAbout = styled.div`
 position: relative;  
+width: 100%;
 background: url(${imgBannerAbout}) center no-repeat;
 background-size: cover;
 border-radius: 30px;
@@ -69,15 +70,14 @@ return (
 
 }
 
-function BannerAbout(){
-return (
-    <StyledBannerAbout>
-        <StyledBackgroundImg></StyledBackgroundImg>
-        <StyledTexth1></StyledTexth1>
-    </StyledBannerAbout>
-)
-
-}
+  function BannerAbout(){
+  return (
+      <StyledBannerAbout>
+          <StyledBackgroundImg></StyledBackgroundImg>
+          <StyledTexth1></StyledTexth1>
+      </StyledBannerAbout>
+  )
+  }
 
 
 

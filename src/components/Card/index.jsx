@@ -65,26 +65,20 @@ const Styledcover = styled.img`
 
 // ----------------------------------------------------------------- //
 
-function Card(){
+function Card() {
     return (
-        <StyledBlock >
-            {DataLogements.map((data)=>{
-                const {id, cover, title} = data;
-
-            return (
-                <StyledBlockCard key={id}>
-                <Link to={{pathname: "/logement/", search: "?id="+id}}>
-                    <StyledBackgroundCard></StyledBackgroundCard>
-                    <StyledTitle>{title}</StyledTitle>    
-                    <Styledcover src={cover} alt={title}/>
-                </Link>
+        <StyledBlock>
+            {DataLogements.map((data) => (
+                <StyledBlockCard key={data.id}>
+                    <Link to={{pathname: "/logement/", search: "?id=" + data.id}}>
+                        <StyledBackgroundCard></StyledBackgroundCard>
+                        <StyledTitle>{data.title}</StyledTitle>
+                        <Styledcover src={data.cover} alt={data.title} />
+                    </Link>
                 </StyledBlockCard>
-            )
-        
-            })}
-        </StyledBlock>       
-
-    )
+            ))}
+        </StyledBlock>
+    );
 }
 
 export default Card;
