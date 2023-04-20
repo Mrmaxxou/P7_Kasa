@@ -13,8 +13,6 @@ const StyledBlock = styled.div`
     justify-content: space-around;
     width: 100%;
 `
-
-
 const StyledBlockCard = styled.div`
     position: relative;
     width: 340px;
@@ -31,7 +29,6 @@ const StyledBlockCard = styled.div`
         margin: 10px 0px 10px 0px;
     } 
 `
-
 const StyledBackgroundCard = styled.div`
     position: absolute;
     bottom: 0;
@@ -42,7 +39,6 @@ const StyledBackgroundCard = styled.div`
     z-index: 1;
     border-radius: 10px;
 `
-
 const StyledTitle = styled.h2`
     position: absolute;
     bottom: 15px;
@@ -53,7 +49,6 @@ const StyledTitle = styled.h2`
     font-weight: 500;
     z-index: 1;
 `
-
 const Styledcover = styled.img`
     width: 100%;
     height: 100%;

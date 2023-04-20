@@ -1,5 +1,6 @@
 import React from 'react';
-import BannerTitre from '../../components/Banner'
+import Banner from '../../components/Banner'
+import BannerHome from '../../assets/banners-home.jpg'
 
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
@@ -36,7 +37,7 @@ function Home(){
   
   return (
   <StyledHome>
-    <BannerTitre />
+    <Banner backgroundImg={BannerHome} height={"110px"} title="Chez vous, partout et ailleurs"/>
     <StyledBlockCard>
         <Card />
     </StyledBlockCard>

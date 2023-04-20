@@ -1,5 +1,6 @@
-import {BannerAbout }from '../../components/Banner'
 import Collapse from '../../components/Collapse'
+import Banner from '../../components/Banner'
+import BannerAbout from '../../assets/banners-propos.jpg'
 
 import styled from 'styled-components'
 
@@ -11,12 +12,14 @@ const StyledAbout = styled.section`
   @media (max-width: 768px){
     margin: 16px 20px 22px 20px;
   } 
-
 `
+
+
+
 function About(){
     return (
         <StyledAbout>
-            <BannerAbout/>
+            <Banner backgroundImg={BannerAbout}  height={"223px"}/>
             <Collapse/>
         </StyledAbout>
     )
