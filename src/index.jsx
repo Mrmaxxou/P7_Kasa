@@ -1,58 +1,42 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 
 // Importation des éléments du dossier "pages"
-import Home from './pages/Home'
-import Propos from './pages/A-Propos'
-import Logement from './pages/Logement'
+import Home from './pages/Home';
+import About from './pages/About';
+import Logement from './pages/Logement';
 
 // Importation des éléments du dossier "components"
-import Header from  './components/Header'
-import Error from './components/Error'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Error from './components/Error';
 
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { createGlobalStyle } from 'styled-components'
+import GlobalStyle from './utils/style/GlobalStyle'
 
-const GlobalStyle = createGlobalStyle`
-  * {
-      font-family: 'Montserrat', sans-serif;
-  }
-  body {
-      margin: 0;
-      padding: 0;
-  }
-  h1{
-    font-size: 48px;
-    font-weight: 500;
-  }
-  p{
-    font-size: 18px;
-    font-weight: 500;
-  }
-`
+import {BrowserRouter as Router, Route, Switch} from'react-router-dom';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <Router>
-      <GlobalStyle />
       <Header />
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/logement">
+          <Route path="/logement/:id?">
             <Logement />
           </Route>
           <Route path="/propos">
-            <Propos />
+            <About />
           </Route>
           <Route>
             <Error />
           </Route>
         </Switch>
-        <Footer />
+      <Footer />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);

@@ -1,9 +1,7 @@
-function Logement() {
+function Logement(){
     return (
-        <div>
-            <h1>Logements</h1>
-        </div>
+        <h1>Fiches Logements</h1>
     )
 }
 
-export default Logement
+export default Logement;
