@@ -6,6 +6,7 @@ import colors from '../../utils/style/colors.js'
 
 
 const StyledBannerHome = styled.div`
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +19,7 @@ const StyledBannerHome = styled.div`
   @media (max-width: 768px){
     border-radius: 10px;
     height: ${props => props.height};
+    margin: 0;
   } 
 `
 

@@ -23,7 +23,6 @@ const StyledHome = styled.section`
 const StyledBlockCard = styled.div`
   background-color: ${colors.backgroundBlockCard};
   border-radius: 25px;
-  margin-top: 40px;
   padding: 31px 0px 31px 0px;
   @media (max-width: 768px){
     background-color: transparent;
