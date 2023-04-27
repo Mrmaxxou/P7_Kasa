@@ -22,7 +22,7 @@ function About(){
         <StyledAbout>
             <Banner backgroundImg={BannerAbout}  height={"223px"}/>
             {dataAbout.map((data) => (
-            <Collapse 
+            <Collapse width={"80%"}
               key={data.title}
               title={data.title}
               text= {data.text}

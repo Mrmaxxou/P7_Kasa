@@ -13,7 +13,7 @@ import colors from '../../utils/style/colors'
 const StyledBlockAbout = styled.section`
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: ${props => props.width};
     margin: 0px 0px 0px 0px;
     @media (max-width: 768px){
         margin: 20px 0px 0px 0px;
@@ -63,7 +63,7 @@ const StyledBackgroundText = styled.div`
       } 
 `
 
-const StyledText = styled.p`
+const StyledText = styled.div`
     color: ${colors.primary};
     font-size: 24px;
     font-weight: 400;
@@ -79,7 +79,7 @@ const StyledText = styled.p`
 
 // ----------------------------------------------------------------- //
 
-function Collapse({title, text}){
+function Collapse({title, text, width}){
     const [collapsed, setCollapsed] = useState(true);
 
     const handleClick = () => {
@@ -99,7 +99,7 @@ function Collapse({title, text}){
     }, []);
 
     return (
-        <StyledBlockAbout>
+        <StyledBlockAbout width={width}>
             <StyledCollapseTitled>
                 <StyledTexth3>{title}</StyledTexth3>
                 <Styledimg 

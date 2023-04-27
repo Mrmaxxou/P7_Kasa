@@ -1,0 +1,59 @@
+.block-logement{
+
+    display: flex;
+    flex-direction: column;
+    margin : 0px 100px 0px 100px;
+
+}
+
+.block-description{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.block-name-rate{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-name{
+
+    display: flex;
+    align-items: center;
+}
+
+.block-name-text{
+
+    margin-right: 10px;
+    width: 50%;
+    text-align: end;
+}
+
+.block-name-picture{
+
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+}
+
+.block-rate{
+    margin-top: 27px;
+}
+
+.block-collapse{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+}
+
+.block-listequipment {
+
+    list-style-type: none;
+}
+
