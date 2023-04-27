@@ -1,9 +1,10 @@
 import Collapse from '../../components/Collapse'
 import Banner from '../../components/Banner'
-import BannerAbout from '../../assets/banners-propos.jpg'
+
 import dataAbout from '../../Datas/About.json'
 
 import styled from 'styled-components'
+import '../../utils/style/banner.css'
 
 const StyledAbout = styled.section`
   display: flex;
@@ -20,7 +21,7 @@ const StyledAbout = styled.section`
 function About(){
     return (
         <StyledAbout>
-            <Banner backgroundImg={BannerAbout}  height={"223px"}/>
+            <Banner bannerClass="container-banner-about"/>
             {dataAbout.map((data) => (
             <Collapse width={"80%"}
               key={data.title}

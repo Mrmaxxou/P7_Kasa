@@ -1,5 +1,6 @@
 import dataLogements from '../../Datas/logements.json'
 import Collapse from '../../components/Collapse';
+import Carroussel from '../../components/Carroussel';
 
 import '../../utils/style/logement.css'
 
@@ -19,9 +20,9 @@ function Logement(){
     
     return (
         <div className="block-logement">
-            <div >
-                
-            </div>
+            
+                <Carroussel logementId={id}/>
+            
             <div className= "block-description">
                 <div className= "block-description-title">
                     <div>
